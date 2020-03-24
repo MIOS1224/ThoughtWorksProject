@@ -1,0 +1,6 @@
+framework module Pods_ThoughtWorkWebChat {
+  umbrella header "Pods-ThoughtWorkWebChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
