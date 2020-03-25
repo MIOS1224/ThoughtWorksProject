@@ -42,18 +42,6 @@
         @strongify(self);
         
         if (image && stage == YYWebImageStageFinished) {
-//            int width = viewModel.picture.bmiddle.width;
-//            int height = viewModel.picture.bmiddle.height;
-//            CGFloat scale = (height / width) / (self.frameHeight / self.frameWidth);
-//            if (scale < 0.99 || isnan(scale)) {
-//                // 宽图把左右两边裁掉
-//                self.contentMode = UIViewContentModeScaleAspectFill;
-//                self.layer.contentsRect = CGRectMake(0, 0, 1, 1);
-//            } else {
-//                // 高图只保留顶部
-//                self.contentMode = UIViewContentModeScaleToFill;
-//                self.layer.contentsRect = CGRectMake(0, 0, 1, (float)width / height);
-//            }
             self.image = image;
             if (from != YYWebImageFromMemoryCacheFast) {
                 CATransition *transition = [CATransition animation];
